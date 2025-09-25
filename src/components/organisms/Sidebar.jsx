@@ -12,10 +12,11 @@ const Sidebar = ({ className }) => {
     { to: "/courses", icon: "BookOpen", label: "Courses" },
     { to: "/assignments", icon: "FileText", label: "Assignments" },
 { to: "/grades", icon: "Award", label: "Grades" },
-    { to: "/calendar", icon: "Calendar", label: "Calendar" },
-    { to: "/notes", icon: "StickyNote", label: "Notes" },
-    { to: "/students", icon: "Users", label: "Students" }
-  ]
+{ to: "/calendar", icon: "Calendar", label: "Calendar" },
+{ to: "/notes", icon: "StickyNote", label: "Notes" },
+{ to: "/students", icon: "Users", label: "Students" },
+{ to: "/teachers", icon: "Users", label: "Teachers" }
+]
 
   return (
     <>

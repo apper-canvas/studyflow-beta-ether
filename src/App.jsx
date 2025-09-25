@@ -1,22 +1,24 @@
-import { createContext, useEffect, useState } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import { ToastContainer } from "react-toastify"
-import { setUser, clearUser } from './store/userSlice'
-import Layout from "@/components/organisms/Layout"
-import Login from '@/components/pages/Login'
-import Signup from '@/components/pages/Signup'
-import Callback from '@/components/pages/Callback'
-import ErrorPage from '@/components/pages/ErrorPage'
-import ResetPassword from '@/components/pages/ResetPassword'
-import PromptPassword from '@/components/pages/PromptPassword'
-import Dashboard from "@/components/pages/Dashboard"
-import Courses from "@/components/pages/Courses"
-import Assignments from "@/components/pages/Assignments"
-import Grades from "@/components/pages/Grades"
-import Calendar from "@/components/pages/Calendar"
-import Notes from "@/components/pages/Notes"
-import Students from "@/components/pages/Students"
+import React, { createContext, useEffect, useState } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { ToastContainer } from "react-toastify";
+import Teachers from "@/components/pages/Teachers";
+import "@/index.css";
+import Layout from "@/components/organisms/Layout";
+import Dashboard from "@/components/pages/Dashboard";
+import Notes from "@/components/pages/Notes";
+import Courses from "@/components/pages/Courses";
+import Login from "@/components/pages/Login";
+import Students from "@/components/pages/Students";
+import Signup from "@/components/pages/Signup";
+import Assignments from "@/components/pages/Assignments";
+import ResetPassword from "@/components/pages/ResetPassword";
+import Callback from "@/components/pages/Callback";
+import Grades from "@/components/pages/Grades";
+import PromptPassword from "@/components/pages/PromptPassword";
+import ErrorPage from "@/components/pages/ErrorPage";
+import Calendar from "@/components/pages/Calendar";
+import { clearUser, setUser } from "@/store/userSlice";
 
 export const AuthContext = createContext(null)
 
@@ -129,9 +131,10 @@ function App() {
                 <Route path="/assignments" element={<Assignments />} />
                 <Route path="/grades" element={<Grades />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/notes" element={<Notes />} />
-                <Route path="/students" element={<Students />} />
-              </Routes>
+<Route path="/notes" element={<Notes />} />
+<Route path="/students" element={<Students />} />
+<Route path="/teachers" element={<Teachers />} />
+</Routes>
             </Layout>
           } />
         </Routes>
