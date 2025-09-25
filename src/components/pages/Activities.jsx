@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";
 import Select from "@/components/atoms/Select";
-import Card from "@/components/atoms/Card";
+import { Card } from "@/components/atoms/Card";
 import Badge from "@/components/atoms/Badge";
 import ApperIcon from "@/components/ApperIcon";
 import Loading from "@/components/ui/Loading";
