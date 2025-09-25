@@ -7,13 +7,14 @@ import Button from "@/components/atoms/Button"
 const Sidebar = ({ className }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
 
-  const navigationItems = [
+const navigationItems = [
     { to: "/dashboard", icon: "LayoutDashboard", label: "Dashboard" },
     { to: "/courses", icon: "BookOpen", label: "Courses" },
     { to: "/assignments", icon: "FileText", label: "Assignments" },
 { to: "/grades", icon: "Award", label: "Grades" },
 { to: "/calendar", icon: "Calendar", label: "Calendar" },
 { to: "/notes", icon: "StickyNote", label: "Notes" },
+{ to: "/activities", icon: "Activity", label: "Activities" },
 { to: "/students", icon: "Users", label: "Students" },
 { to: "/teachers", icon: "Users", label: "Teachers" }
 ]

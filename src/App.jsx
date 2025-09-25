@@ -18,6 +18,7 @@ import Grades from "@/components/pages/Grades";
 import PromptPassword from "@/components/pages/PromptPassword";
 import ErrorPage from "@/components/pages/ErrorPage";
 import Calendar from "@/components/pages/Calendar";
+import Activities from "@/components/pages/Activities";
 import { clearUser, setUser } from "@/store/userSlice";
 
 export const AuthContext = createContext(null)
@@ -132,6 +133,7 @@ function App() {
                 <Route path="/grades" element={<Grades />} />
                 <Route path="/calendar" element={<Calendar />} />
 <Route path="/notes" element={<Notes />} />
+<Route path="/activities" element={<Activities />} />
 <Route path="/students" element={<Students />} />
 <Route path="/teachers" element={<Teachers />} />
 </Routes>
